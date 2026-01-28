@@ -49,7 +49,7 @@ export default function Sidebar() {
 
   return (
     <aside
-      className={`flex flex-col bg-sidebar-bg text-sidebar-text border-r border-sidebar-line transition-all duration-[180ms] ${
+      className={`flex flex-col h-screen bg-sidebar-bg text-sidebar-text border-r border-sidebar-line transition-all duration-[180ms] ${
         collapsed ? 'w-[84px]' : 'w-[280px]'
       }`}
     >
@@ -92,7 +92,7 @@ export default function Sidebar() {
         )}
       </div>
 
-      <div className="flex-1 flex flex-col gap-3 py-2 pb-4">
+      <div className="flex-1 flex flex-col gap-3 py-2 pb-4 overflow-y-auto">
         <SidebarSection
           title="Main"
           collapsed={collapsed}

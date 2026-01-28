@@ -3,9 +3,9 @@ import Sidebar from '../ui/Sidebar'
 
 export default function MainLayout({ children }) {
   return (
-    <div className="flex min-h-screen bg-page-bg">
+    <div className="flex h-screen bg-page-bg overflow-hidden">
       <Sidebar />
-      <main className="flex-1 p-8 bg-page-bg">{children}</main>
+      <main className="flex-1 p-8 bg-page-bg overflow-y-auto">{children}</main>
     </div>
   )
 }
